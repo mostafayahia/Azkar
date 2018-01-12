@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Copyright (C) 2018 Yahia H. El-Tayeb
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/evening_2" >
+        <TextView 
+	    android:id="@+id/azkarView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/evening_azkar"
+	    android:gravity="center" 
+	    android:textColor="#FFFFFFFF"
+	    android:textSize="@dimen/text_size"
+	    android:padding="@dimen/padding"
+	    android:scrollbars="vertical"
+	    />
+    </ScrollView>
+	
+
+    <!-- NOTE we android:layout_height match_parent for all except for the largest one wrap_content
+		for testing and editing purposes set background attribute to a certain value for each text view or view  -->
+	<LinearLayout
+	    android:visibility="visible"
+	    android:id="@+id/lst"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true" 
+	    android:weightSum="10"
+	    android:background="#DEFFFFFF"
+	    >
+
+		
+		<TextView
+		    android:id="@+id/zoomOut"
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:layout_weight="5"
+		    android:text="@string/zoom_out_str"
+		    android:textSize="@dimen/text_size" 
+		    android:padding="@dimen/padding"
+		    android:textColor="#FF000000"
+		    android:background="@drawable/touch_selector" />
+		<View 
+		    android:layout_width="0dip"
+		    android:layout_height="match_parent"
+		    android:background="#FF000000"
+		    android:layout_weight="0.1"/>
+		<TextView
+		    android:id="@+id/zoomIn"
+		    android:layout_width="0dip"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:layout_weight="5"
+		    android:text="@string/zoom_in_str"
+		    android:textSize="@dimen/text_size"
+		    android:padding="@dimen/padding"
+		    android:textColor="#FF000000"
+		    android:background="@drawable/touch_selector" />
+		
+		
+
+	</LinearLayout>
+
+</RelativeLayout>

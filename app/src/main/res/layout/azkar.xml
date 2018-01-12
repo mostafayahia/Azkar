@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     Copyright (C) 2018 Yahia H. El-Tayeb
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/azkarScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/azkarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/evening_2"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:scrollbars="vertical"
+            android:text="@string/evening_azkar"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/text_size" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#DEFFFFFF"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="10" >
+
+        <!--
+        NOTE we android:layout_height match_parent for all except for the largest one wrap_content
+		for testing and editing purposes set background attribute to a certain value for each text view or view
+        -->
+
+        <TextView
+            android:id="@+id/lastPageVwItem"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/touch_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="@string/last_page_str"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/text_size" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="#FF000000" />
+
+        <TextView
+            android:id="@+id/alkorsyVwItem"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/touch_selector"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="@string/alkorsy_verse_str"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

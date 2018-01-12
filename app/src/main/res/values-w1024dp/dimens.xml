@@ -1,0 +1,9 @@
+<resources>
+
+    <!--     ===================== W 1024 and greater ======================== -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="text_size">45sp</dimen> 
+    <dimen name="margin">32dip</dimen>
+    <dimen name="padding">32dip</dimen>
+
+</resources>

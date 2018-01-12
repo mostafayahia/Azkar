@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/landscape"
+        android:title="@string/landscape_str"/>
+    <item android:id="@+id/portrait"
+        android:title="@string/portrait_str"/>
+    <item android:id="@+id/fontSize"
+        android:title="@string/font_size_str"/>
+
+</menu>
